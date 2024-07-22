@@ -2,16 +2,16 @@
 
 ## Create a new user
 
-<mark style="color:green;">`POST`</mark> /api/register
+<mark style="color:green;">`POST`</mark> /api/auth/register
 
 {% tabs %}
 {% tab title="CURL" %}
 ```javascript
-curl --location 'http://localhost:3000/api/register' \
+curl --location 'http://localhost:3000/api/auth/register' \
 --header 'Content-Type: application/json' \
 --data '{
-    "username":"nikunj",
-    "password":"gauriii"
+    "username":"Nikunj Garg",
+    "password":"nikunj@geek"
 }'
 ```
 {% endtab %}

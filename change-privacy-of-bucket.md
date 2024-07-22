@@ -1,17 +1,17 @@
 # Change privacy of bucket
 
-## This api helps changing the privacy of user bucket. For eg. public to private and private to public bucket.
+This api helps changing the privacy of user bucket. For eg. public to private and private to public bucket.
 
-<mark style="color:green;">`PUT`</mark> /api/changePrivacy
+<mark style="color:green;">`PUT`</mark> /api/bucket/changePrivacy
 
 {% tabs %}
 {% tab title="CURL" %}
 ```javascript
-curl --location --request PUT 'http://localhost:3000/api/changePrivacy' \
+curl --location --request PUT 'http://localhost:3000/api/bucket/changePrivacy' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhdXJpIiwidXNlcmlkIjoiZDk3MWYxYTMtMDEyOC00MDlmLWI4M2YtMTNiMGRiYmY5YjM0IiwiaWF0IjoxNzIxNTc2NTUzLCJleHAiOjE3MjIxODEzNTN9.a73upKf7Z5ysbJ5oFo4ZiWwQqGXFJqM6hduzi84C1N0' \
 --data '{
-    "bucketName":"arjun",
+    "bucketName":"JKTECHNOLOGY",
     "newPrivacy":true
 }'
 ```
@@ -32,7 +32,7 @@ curl --location --request PUT 'http://localhost:3000/api/changePrivacy' \
 ```json
 {
     "success": true,
-    "message": "Bucket 'arjun' privacy updated successfully."
+    "message": "Bucket 'JKTECHNOLOGY' privacy updated successfully."
 }
 ```
 {% endtab %}

@@ -4,16 +4,16 @@
 
 All API'S ARE AUTHORISED USING JWT ACCESS TOKEN.
 
-<mark style="color:green;">`POST`</mark> /api/register
+<mark style="color:green;">`POST`</mark> /api/auth/login
 
 {% tabs %}
 {% tab title="CURL" %}
 ```javascript
-curl --location 'http://localhost:3000/api/login' \
+curl --location 'http://localhost:3000/api/auth/login' \
 --header 'Content-Type: application/json' \
 --data '{
-    "username":"nikunj",
-    "password":"gauriii"
+    "username":"Nikunj Garg",
+    "password":"nikunj@geek"
 }'
 ```
 {% endtab %}

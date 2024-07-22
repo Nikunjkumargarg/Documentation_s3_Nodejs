@@ -2,12 +2,12 @@
 
 ## This api is used to refresh the expired token of the user.
 
-<mark style="color:green;">`POST`</mark> /api/refreshtoken
+<mark style="color:green;">`POST`</mark> /api/auth/refreshtoken
 
 {% tabs %}
 {% tab title="CURL" %}
 ```javascript
-curl --location 'http://localhost:3000/api/refreshtoken' \
+curl --location 'http://localhost:3000/api/auth/refreshtoken' \
 --header 'Content-Type: application/json' \
 --data '{
     "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pa3VuaiIsInVzZXJpZCI6IjFjOGMwN2I4LTg4ZTMtNDg0NC05MTFlLThmMWFlZjg5Yjg4NiIsImlhdCI6MTcyMTYyNzQwOCwiZXhwIjoxNzIyMjMyMjA4fQ.nhDqJkhX0Tx2guTARQTlhk-B-LYSNtmkifT8rrtM8aU"
@@ -18,9 +18,9 @@ curl --location 'http://localhost:3000/api/refreshtoken' \
 
 **Body**
 
-| Name         | Type   | Description                                 | Required |
-| ------------ | ------ | ------------------------------------------- | -------- |
-| refreshToken | string | refresh token string received while log in. | Yes      |
+| Name         | Type   | Description                                      | Required |
+| ------------ | ------ | ------------------------------------------------ | -------- |
+| refreshToken | string | refresh token string received in logIn response. | Yes      |
 
 **Response**
 
