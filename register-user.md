@@ -4,6 +4,19 @@
 
 <mark style="color:green;">`POST`</mark> /api/register
 
+{% tabs %}
+{% tab title="CURL" %}
+```javascript
+curl --location 'http://localhost:3000/api/register' \
+--header 'Content-Type: application/json' \
+--data '{
+    "username":"nikunj",
+    "password":"gauriii"
+}'
+```
+{% endtab %}
+{% endtabs %}
+
 **Body**
 
 | Name     | Type   | Description          | Required |

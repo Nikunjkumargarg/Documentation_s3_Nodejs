@@ -1,11 +1,14 @@
 # Table of contents
 
-* [Documentation\_s3\_Nodejs](README.md)
-* [Page](page.md)
+* [Documentation NodeJs S3 Service](README.md)
 * [Register User](register-user.md)
 * [User Login](user-login.md)
+* [Change privacy of bucket](change-privacy-of-bucket.md)
+* [Refresh token](refresh-token.md)
 * [Create Bucket](create-bucket.md)
 * [Get all buckets](get-all-buckets.md)
 * [Upload Image In Bucket](upload-image-in-bucket.md)
-* [Get Images from bucket](get-images-from-bucket.md)
+* [Delete Image from Bucket](delete-image-from-bucket.md)
+* [Get all Images from bucket](get-all-images-from-bucket.md)
+* [Get Image from bucket](get-image-from-bucket.md)
 * [Get bucket by name](get-bucket-by-name.md)

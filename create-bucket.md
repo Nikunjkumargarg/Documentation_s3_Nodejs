@@ -2,6 +2,20 @@
 
 <mark style="color:green;">`POST`</mark> /api/buckets
 
+{% tabs %}
+{% tab title="CURL" %}
+```javascript
+curl --location 'http://localhost:3000/api/buckets' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pa3VuaiIsInVzZXJpZCI6IjFjOGMwN2I4LTg4ZTMtNDg0NC05MTFlLThmMWFlZjg5Yjg4NiIsImlhdCI6MTcyMTYyNzQwOCwiZXhwIjoxNzIyMjMyMjA4fQ.xKYkkC-4ooPz62in1Xx7v6lbxhNOl6j0jDhFt5KM7EY' \
+--data '{
+    "bucketName":"arjun",
+    "isPrivate": true
+}'
+```
+{% endtab %}
+{% endtabs %}
+
 **Body**
 
 This Api helps creating buckets. User can build both Private and Public Buckets.

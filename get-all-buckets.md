@@ -2,6 +2,15 @@
 
 <mark style="color:green;">`GET`</mark> /buckets
 
+{% tabs %}
+{% tab title="CURL" %}
+```javascript
+curl --location 'http://localhost:3000/api/buckets' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pa3VuaiIsInVzZXJpZCI6IjY1ZWZkNzIxLWEyYTQtNGRhMS05ZTYxLThkYTIyN2Q5ZTMyNyIsImlhdCI6MTcyMTUzNzI5MSwiZXhwIjoxNzIxNTM4MTkxfQ.bHVJGxVC0EMAdd5xDYHFeKMD9OrtM3v4avCzYWdNk9U'
+```
+{% endtab %}
+{% endtabs %}
+
 **Body**
 
 This Api provides all users buckets. Only userId in the param is required.
